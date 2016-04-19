@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests, smtplib
 from email.mime.text import MIMEText
 url = 'http://myexternalip.com/raw'
