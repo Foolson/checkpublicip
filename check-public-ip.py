@@ -11,13 +11,10 @@ try:
   f.close()
 except FileExistsError:
   print('* IP-log already exists!')
-
-
 f = open('ip-log', 'r')
 oldIp = f.read()
 f.close()
 print('* Reading old public IP from IP-log: '+oldIp)
-
 print('* Comparing old public IP and new public IP')
 if newIp != oldIp:
   print('* New public IP detected, writing to IP-log')
