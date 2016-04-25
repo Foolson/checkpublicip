@@ -1,6 +1,5 @@
 import requests, smtplib
-from email.mime.text import MIMEText
-#r = requests.get('http://myexternalip.com/raw')
+from email.mime.text import MIMEText  
 newIp = requests.get('http://myexternalip.com/raw').text.rstrip()
 try:
   f = open('ip-log', 'x')
